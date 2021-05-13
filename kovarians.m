@@ -5,13 +5,13 @@ function [cov1,cov2,cov3] = kovarians(data, dataClass)
     C3 = [];
     for i = 1: size(data,1)
         if dataClass(i,1) == 1
-            C1(end+1,:) = D1(i,:);
+            C1(end+1,:) = data(i,:);
         end
         if dataClass(i,1) == 2
-            C2(end+1,:) = D1(i,:);
+            C2(end+1,:) = data(i,:);
         end
         if dataClass(i,1) == 3
-            C3(end+1,:) = D1(i,:);
+            C3(end+1,:) = data(i,:);
         end
     end
     cov1 = cov(C1);
