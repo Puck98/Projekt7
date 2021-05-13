@@ -14,7 +14,7 @@ function [my1,my2,my3] = vantevarde(data, dataClass)
             C3(end+1,:) = data(i,:);
         end
     end
-    my1 = mean(C1);
-    my2 = mean(C2);
-    my3 = mean(C3);
+    my1 = mean(C1)';
+    my2 = mean(C2)';
+    my3 = mean(C3)';
 end
