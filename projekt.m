@@ -1,5 +1,6 @@
 load('Bakad_Data.mat')
 
+pdf = @(x)(1/((2*pi)^(n/2)*sqrt(det(COV))))*exp((-1/2)*transpose(x-VANTE)*(COV)^(-1)*(x-VANTE));
 
 function [D1,D1c,D2,D2c] = select(features, class)
 
