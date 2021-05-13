@@ -18,4 +18,4 @@ function [cov1,cov2,cov3] = kovarians(data, dataClass)
     cov2 = cov(C2);
     cov3 = cov(C3);
 end
-%hej
+
