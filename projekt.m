@@ -1,4 +1,6 @@
 load('Bakad_Data.mat')
+
+
 function [D1,D1c,D2,D2c] = select(features, class)
 
     vect = randsample(150, 75);
